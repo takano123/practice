@@ -92,7 +92,7 @@ function Header() {
           </IconButton>
           <img src={topLogo} style={{height: '72px', marginRight: '20px'}}/>
           <Typography align='left' variant="h5" sx={{ cursor : 'pointer', flexGrow: 1 }} >
-              VM自動評価ダッシュボード１
+              VM自動評価ダッシュボード
           </Typography>
         </Toolbar>
       </AppBar>
