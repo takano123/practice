@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-//import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
  
 import { useState, useEffect } from 'react'
  
@@ -69,16 +69,26 @@ function Header() {
             <MenuIcon onClick={menuToggle}/>
             <Drawer anchor='left' open={isMenuOpen} onClose={menuToggle}>
               <List sx={menuStyle} component="nav" aria-label="mailbox folders">
-                {//<Link to='/'>
-                }
+                <Link to='/'>
+                
                   <ListItem button>
                     <ListItemIcon>
                       <HomeIcon/>
                     </ListItemIcon>
                     <ListItemText primary="ホーム" />
                   </ListItem>
-                {//</Link>
-                }
+                </Link>
+
+                <Divider />
+                <Link to='/Test'>
+                <ListItem button>
+                  <ListItemIcon>
+                    <SettingsIcon/>
+                  </ListItemIcon>
+                  <ListItemText primary="TEST" />
+                </ListItem>
+                </Link>
+                
                 <Divider />
                 <ListItem button>
                   <ListItemIcon>
